@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        </style>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "aOJvYe-CD3ZX2zQ7Y",
+                });
+            })();
+        </script>
+        <!-- Link to JavaScript file -->
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Muhamed Zubair Benny</a>
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Home Section -->
+        <section id="home" class="home">
+            <div class="home-img">
+                <img src="zubair.jpg" alt="">
+            </div>
+            <div class="home-content">
+                <h1>Hi, It's <span>Zubair</span></h1>
+                <h3><div class="typing-text">I'm a <span></span></div></h3>
+                <p>Dedicated developer with a passion for solving problems and building impactful solutions.</p>
+                <div class="social-icon">
+                    <a href="https://linkedin.com/in/muhamed-zubair-benny"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/MuhamedZubairBenny"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="#contact" class="btn">Hire me</a>
+                <a href="#" class="btn">Resume</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I am a passionate and driven developer with a Diploma in ICT majoring in Applications Development, currently pursuing an Advanced Diploma in IT with a focus on Java. My expertise spans a variety of programming languages, including Java, Python, C++, C#, SQL, HTML, CSS, and JavaScript. 
+                I have hands-on experience with tools and technologies such as Postman for API testing, SQLite and MySQL for database management, and Vue.js for building responsive frontend applications.</p>
+            <p>Beyond software development, I enjoy exploring game development using Unity and Godot, where I bring creativity and technical skills together to create engaging experiences. My projects reflect a strong understanding of Java OOP, database management, and principles like Test-Driven Development (TDD) and Domain-Driven Design (DDD).</p>
+            <p>I thrive on learning and adapting, whether it’s diving deeper into full-stack development, integrating RESTful APIs, or honing my skills in building scalable, maintainable software solutions. I am eager to continue growing and contributing to innovative projects in the ever-evolving IT landscape.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>Project 1</h3>
+                    <p>Short description of the project.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Project 2</h3>
+                    <p>Short description of the project.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Project 3</h3>
+                    <p>Short description of the project.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </body>
+</html>
+

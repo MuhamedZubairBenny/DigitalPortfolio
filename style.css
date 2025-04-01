@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Home Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #1A1A1A; 
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: #1A1A1A; 
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 1px solid #0096FF;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #0096FF;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #0096FF;
+    border-bottom: 3px solid #0096FF;
+}
+
+@media (max-width: 995px) {
+    nav {
+        display:none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #0096FF;
+        border-bottom: 3px solid #0096FF;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #1A1A1A; 
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #0096FF;
+    }
+}
+
+section {
+    scroll-margin-top: 100px;
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: #1A1A1A; 
+    padding: 5rem 25%;
+}
+
+
+.home .home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #FFFFFF;
+}
+
+span {
+    color: #0096FF;
+}
+
+.home-content h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    color: #CCCCCC;
+}
+
+.home-img {
+    border-radius: 50%;
+}
+
+.home-img img {
+    position: relative;
+    width: 15vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #0096FF;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-img img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 35px #0096FF;
+}
+
+.social-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #0096FF;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem;
+    transition: 0.3s ease;
+    color: #0096FF;
+}
+
+.social-icon a:hover {
+    color: #1A1A1A; 
+    transform: scale(1.3) translateY(-5px);
+    background-color: #0096FF;
+    box-shadow: 0 0 25px #0096FF;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: #0096FF;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #1A1A1A; 
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #0096FF;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    margin: 0 2rem;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #FFFFFF;
+    color: #1A1A1A; 
+    box-shadow: 0 0 25px #0096FF;
+}
+
+.typing-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span {
+    position: relative;
+}
+
+.typing-text span:before {
+    content: "Software Developer";
+    color: #0096FF;
+    animation: words 20s infinite;
+}
+
+.typing-text span:after {
+    content: "";
+    background-color: #1A1A1A; 
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid #1A1A1A; 
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 3px solid #0096FF;
+        margin-left: 5px;
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "Software Developer";
+    }
+    21%, 40% {
+        content: "Web Developer";
+    }
+    41%, 60% {
+        content: "Web Designer";
+    }
+    61%, 80% {
+        content: "Game Developer";
+    }
+    81%, 100% {
+        content: "Script Writer";
+    }
+}
+
+@media (max-width: 1000px) {
+    .home {
+        gap: 4rem;
+    }
+
+}
+
+@media (max-width: 995px) {
+    .home {
+        flex-direction: column;
+        margin: 5rem;
+    }
+
+    .home .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        margin-top: 4rem;
+    }
+    .btn {
+        padding: 0.8rem 2rem; /* Smaller padding for smaller buttons */
+        font-size: 1.4rem; /* Smaller font size */
+        border-radius: 3rem; /* Slightly smaller border radius */
+        margin: 0.5rem; /* Adds spacing between buttons */
+    }
+}
+
+/* About Section */
+.about {
+    background-color: #1A1A1A; 
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5rem 30%;
+}
+
+.about h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #0096FF;
+    margin-bottom: 2rem;
+}
+
+.about p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #CCCCCC;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #1A1A1A; 
+    color: #FFFFFF;
+    padding: 5rem 9%;
+    margin-top: -2rem;
+}
+
+.projects h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #0096FF;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.project-item {
+    background-color: #333333; 
+    border: 2px solid #0096FF;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 20%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item h3 {
+    font-size: 2.4rem;
+    color: #0096FF;
+    margin-bottom: 1rem;
+}
+
+.project-item p {
+    font-size: 1.6rem;
+    color: #CCCCCC; /* Light Gray */
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #0096FF;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #1A1A1A; 
+    color: #FFFFFF;
+    padding: 3rem 9%;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.contact h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #0096FF;
+    margin-bottom: 2rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border: 2px solid #0096FF;
+    border-radius: 0.5rem;
+    background-color: #333333; /* Slightly lighter gray */
+    color: #FFFFFF;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #0096FF; /* Slightly brighter yellow */
+}
+
+.contact button {
+    padding: 1rem 2.8rem;
+    background-color: #0096FF;
+    border: none;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #1A1A1A; 
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #0096FF;
+}
