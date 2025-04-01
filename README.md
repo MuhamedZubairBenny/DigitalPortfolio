@@ -1,6 +1,7 @@
 My Portfolio 🌐
 
 Welcome to my portfolio! I'm a Software Developer passionate about building scalable web applications, optimizing user experiences, and solving complex problems with code.
+
 🚀 About Me
 
     Skilled in Java, C#, Python, Spring Boot, Vue.js, MySQL, and more
